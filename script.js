@@ -51,7 +51,7 @@ function createcountry({ name, flag, code, capital, region, population,latitude,
  
   <div class="card-body car" >
   <p><span>Population :</span>${population}</p>
-  <p><span>Captial :</span> ${capital}</p>
+  <p><span>Capital :</span> ${capital}</p>
   <p><span>Region :</span> ${region}</p>
   <p><span>Country Code :</span>${code}</p>
   <a href="#" class="btn btn-primary" onclick=(block(${latitude},${longitude},${name})) >Click for Weather</a>
@@ -77,9 +77,9 @@ function block(lat,lng,name){
 
      alert(`
                For ${name.id}  
-     Current Humidity is ${data.main.humidity}
-     Current Pressure is ${data.main.pressure}
-     Current Temperature is ${data.main.temp}`)
+     Current Humidity  ${data.main.humidity}
+     Current Pressure ${data.main.pressure}
+     Current Temperature ${data.main.temp}`)
     })
 }
   
